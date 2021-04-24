@@ -58,9 +58,11 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
           ),
-          WheelStateWidget(
-            constraints: constraints,
-          )
+          Align(
+              alignment: Alignment(-0.1, .3),
+              child: WheelStateWidget(
+                constraints: constraints,
+              ))
         ],
       ),
     );
@@ -86,4 +88,3 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
-
