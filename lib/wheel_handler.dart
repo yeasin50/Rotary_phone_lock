@@ -57,6 +57,14 @@ class _WheelStateWidgetState extends State<WheelStateWidget> {
       print("on 2");
     }
 
+    ///`0`
+    else if (_localOffset.dx > _containerHeight * .682 &&
+        _localOffset.dx < _containerHeight * .8 &&
+        _localOffset.dy > _containerHeight * .8 &&
+        _localOffset.dy < _containerHeight * .92) {
+      print("on 0");
+    }
+
     ///`4`
     else if (_localOffset.dx < _containerHeight * .37 &&
         _localOffset.dx > _containerHeight * .26 &&
@@ -87,12 +95,28 @@ class _WheelStateWidgetState extends State<WheelStateWidget> {
       print("on 3");
     }
 
-//TODO:: 
     ///`6`
-    else if (_localOffset.dx < _containerHeight * .578 &&
-        _localOffset.dx > _containerHeight * .47 &&
-        _localOffset.dy < _containerHeight * .12) {
+    else if (_localOffset.dx < _containerHeight * .19 &&
+        _localOffset.dx > _containerHeight * .05 &&
+        _localOffset.dy > _containerHeight * .43 &&
+        _localOffset.dy < _containerHeight * .56) {
       print("on 6");
+    }
+
+    ///`7`
+    else if (_localOffset.dx < _containerHeight * .2 &&
+        _localOffset.dx > _containerHeight * .1 &&
+        _localOffset.dy > _containerHeight * .64 &&
+        _localOffset.dy < _containerHeight * .75) {
+      print("on 7");
+    }
+
+    ///`5`
+    else if (_localOffset.dx < _containerHeight * .22 &&
+        _localOffset.dx > _containerHeight * .1 &&
+        _localOffset.dy > _containerHeight * .2 &&
+        _localOffset.dy < _containerHeight * .32) {
+      print("on 5");
     }
   }
 
