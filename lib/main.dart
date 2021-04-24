@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'components/utils/anim_tester.dart';
 import 'body.dart';
+import 'wheel_handler.dart';
 
 void main() {
   runApp(MyApp());
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         body: SafeArea(
-          child: AnimTester(),
+          child: WheelStateWidget(),
         ),
       ),
     );
