@@ -5,7 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 class PaintHelper {
   static getTextPainter(int digit) {
     final TextStyle _textStyle = GoogleFonts.roboto(
-      fontSize: 33,
+      fontSize: 27,
       color: Colors.white,
       fontWeight: FontWeight.w800,
     );
