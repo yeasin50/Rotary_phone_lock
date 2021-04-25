@@ -35,7 +35,7 @@ class _AnimTesterState extends State<AnimTester> {
           child: Transform.rotate(
               angle: _angel,
               child: WheelStateWidget(
-                constraints: 200,
+                size: 200,
               )),
         ),
       ),
