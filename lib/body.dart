@@ -15,8 +15,6 @@ class HomeScreen extends StatefulWidget {
 ///lets' make it for phone 1st
 
 class _HomeScreenState extends State<HomeScreen> {
-  final double _dotRadius = 25.0;
-  final double _dialerRadius = 140;
   @override
   Widget build(BuildContext context) {
     final TextStyle _headerTextStyle = GoogleFonts.timmana(
@@ -49,7 +47,9 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             Align(
               alignment: Alignment(.8, -.5),
-              child: buildDots(),
+              child: IndicatorDots(
+                radius: constraints.maxWidth * .07,
+              ),
             ),
             Align(
               alignment: Alignment(0, .1),
@@ -70,33 +70,13 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: Container(
                   height: _containerWidth,
                   width: _containerWidth,
-                  child: WheelStateWidget(
+                  child: Wheel(
                     size: _wheelSize,
                   ),
                 ))
           ],
         );
       }),
-    );
-  }
-
-  Row buildDots() {
-    return Row(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        CustomContainer(
-          radius: _dotRadius,
-        ),
-        CustomContainer(
-          radius: _dotRadius,
-        ),
-        CustomContainer(
-          radius: _dotRadius,
-        ),
-        CustomContainer(
-          radius: _dotRadius,
-        ),
-      ],
     );
   }
 }
