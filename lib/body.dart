@@ -4,8 +4,9 @@ import 'package:dial_lock/components/header_text.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'components/creator_details.dart';
 import 'components/indicator_dot.dart';
-import 'wheel_handler.dart';
+import 'components/wheel_handler.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -29,6 +30,11 @@ class _HomeScreenState extends State<HomeScreen> {
 
         return Stack(
           children: [
+            Positioned(
+              bottom: _containerWidth * .1,
+              right: _containerWidth * .1,
+              child: AuthorInfo(),
+            ),
             Positioned(
               left: _containerWidth * 0.1,
               top: _containerWidth * 0.2,
@@ -59,13 +65,14 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: CustomPaint(
                   isComplex: true,
                   painter: SpringHousePaint(
-                    dialerRadius: _containerWidth * .45,
+                    dialerRadius: _containerWidth * .435,
                   ),
                 ),
               ),
             ),
             Align(
                 alignment: Alignment(0, .1),
+
                 /// this container helps to align with `SpringHousePaint`
                 child: Container(
                   height: _containerWidth,
