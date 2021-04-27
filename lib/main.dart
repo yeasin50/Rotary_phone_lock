@@ -1,4 +1,5 @@
 import 'package:dial_lock/provider/dot_provider.dart';
+import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 
 import 'body.dart';
@@ -11,6 +12,11 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(
+      SystemUiOverlayStyle(
+        statusBarColor: Colors.black.withAlpha(70),
+      ),
+    );
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(
