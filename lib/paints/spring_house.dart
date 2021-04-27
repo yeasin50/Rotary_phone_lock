@@ -70,20 +70,20 @@ class SpringHousePaint extends CustomPainter {
     canvas.drawCircle(offset, size.width * .030, paint);
 
     ///`Helper`
-    paint
-      ..color = Colors.blue.withOpacity(.7)
-      ..strokeWidth = 3;
-    canvas.drawLine(Offset(0, 0), Offset(size.width, size.height), paint);
-    canvas.drawLine(Offset(0, size.height), Offset(size.width, 0), paint);
+    // paint
+    //   ..color = Colors.blue.withOpacity(.7)
+    //   ..strokeWidth = 3;
+    // canvas.drawLine(Offset(0, 0), Offset(size.width, size.height), paint);
+    // canvas.drawLine(Offset(0, size.height), Offset(size.width, 0), paint);
 
-    canvas.drawLine(Offset(size.width * .5, 0),
-        Offset(size.width * .5, size.height), paint);
+    // canvas.drawLine(Offset(size.width * .5, 0),
+    //     Offset(size.width * .5, size.height), paint);
 
-    canvas.drawLine(Offset(0, size.height * .5),
-        Offset(size.width, size.height * .5), paint);
+    // canvas.drawLine(Offset(0, size.height * .5),
+    //     Offset(size.width, size.height * .5), paint);
 
-    canvas.drawLine(Offset(0, 0), Offset(size.width, size.height), paint);
-    canvas.drawLine(Offset(0, 0), Offset(size.width, size.height), paint);
+    // canvas.drawLine(Offset(0, 0), Offset(size.width, size.height), paint);
+    // canvas.drawLine(Offset(0, 0), Offset(size.width, size.height), paint);
   }
 
   @override
