@@ -3,7 +3,7 @@
 ![Flutter-v2.0.3](https://img.shields.io/badge/Flutter-v2.0.3-blue) 
 ![Dart-v2.12.2](https://img.shields.io/badge/Dart-v2.12.2-blue)
 ![channel-stable](https://img.shields.io/badge/channel-stable-blue) 
-
+[![PyPI license](https://img.shields.io/pypi/l/ansicolortags.svg)](LICENCE)
 
  ### Dependencies :
   ![dependencies](https://img.shields.io/badge/provider-5.0.0-blue)
