@@ -1,32 +1,69 @@
 # Rotary dial Locker
+![Null_safety OK](https://img.shields.io/badge/Null_safety-√-blue)
+![Flutter-v2.0.3](https://img.shields.io/badge/Flutter-v2.0.3-blue) 
+![Dart-v2.12.2](https://img.shields.io/badge/Dart-v2.12.2-blue)
+![channel-stable](https://img.shields.io/badge/channel-stable-blue) 
 
-![dependencies](https://img.shields.io/badge/channel-stable-blue) 
-![dependencies](https://img.shields.io/badge/Flutter-v2.0.3-blue) 
-![dependencies](https://img.shields.io/badge/Dart-v2.12.2-blue)
+
+ ### Dependencies :
+  ![dependencies](https://img.shields.io/badge/provider-5.0.0-blue)
+   ![dependencies](https://img.shields.io/badge/google_fonts-2.0.0-blue)
+  ![dependencies](https://img.shields.io/badge/easy_rich_text-0.5.4-blue) </a>
+
+<br> 
+
+![OutPut Gif](images/rotateDial.gif)
+
+## How it works
+
+Most magic handle by `GuesterDetector`.
+- onPanEnd
+- onPanDown
+- onPanUpdate
+  
+[SpringHouse](lib/components/wheel_handler.dart), 1st we locate where users tap on screen using `localPosition offset`. for UI tap update `Transform` angle will update automatically until it reaches its max point. We also confirm the digit by angle. Then, using ``Timer``, we minimize the value and change the UI until it reaches the original position.
+
+UI State handle using [`Dot Provider`](lib/provider/dot_provider.dart). 
 
 
+--------
 
-There are also diff approch can be apply, like doing most parts just using CustomPainter.
+<br>
+
+
+### Dots Animation
+
+![Dot Anime](images/dotsGif.gif)
+For the Dot animation you can check [anim_tester.dart](lib/components/utils/anim_tester.dart)
+
+
+****
+### [Text Animation](lib/components/creator_details.dart)
+![Text Animation](images/textAnimate.gif)
+
+
+----------
+There are also diff approch can be apply, like doing most parts just using CustomPainter. Best approch will be using image. 
+
 
 but for wheel , its'easy to do with images. also paintmaker sites can help to make this shape with short amount of time. 
 
-idea => From [LinkedIn Video]( https://www.linkedin.com/posts/shubham0812_swiftui-iosdevelopment-iosdev-ugcPost-6791003295537344513-XmXz)
+inspiration [LinkedIn Video]( https://www.linkedin.com/posts/shubham0812_swiftui-iosdevelopment-iosdev-ugcPost-6791003295537344513-XmXz)
 
 
 Know more about [Rotary dial](http://www.matilo.eu/restauratie/hoe-reviseer-ik-eenvoudig-een-kiesschijf-draaischijf/?lang=en)
 
 
 
+<br>
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## License & copyright
+---
+Licensed under the [MIT License](LICENCE).
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+<br>  
+
