@@ -30,10 +30,10 @@ UI State handle using [`Dot Provider`](lib/provider/dot_provider.dart).
 
 <br>
 
-
 ### Dots Animation
 
-![Dot Anime](images/dotsGif.gif)
+![Dot Anime](images/dotsGif.gif)   
+
 For the Dot animation you can check [anim_tester.dart](lib/components/utils/anim_tester.dart)
 
 
@@ -43,10 +43,11 @@ For the Dot animation you can check [anim_tester.dart](lib/components/utils/anim
 
 
 ----------
-There are also diff approch can be apply, like doing most parts just using CustomPainter. Best approch will be using image. 
+There are also different approaches that can be applied, like doing most parts just using CustomPainter. Best approach will be using images. Digit detection can handle touchPoint + radius. Rotate direction can be improved by calculating angles. I gave users more flexibility 😁.
 
-
-but for wheel , its'easy to do with images. also paintmaker sites can help to make this shape with short amount of time. 
+But for wheels , it's easy to do with images. Also paint maker sites can help to make this shape with a short amount of time.
+There are some unnecessary methods for test & future use purposes. 
+ 
 
 inspiration [LinkedIn Video]( https://www.linkedin.com/posts/shubham0812_swiftui-iosdevelopment-iosdev-ugcPost-6791003295537344513-XmXz)
 
